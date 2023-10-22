@@ -1,7 +1,7 @@
 # Setup
 
 Run the following command:\
-`bash <(curl -s https://raw.githubusercontent.com/phill4y/`dotfiles/master/install.sh)
+`bash <(curl -s https://raw.githubusercontent.com/phill4y/dotfiles/master/install.sh)`
 
 # Known issues
 
