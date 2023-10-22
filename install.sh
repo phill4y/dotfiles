@@ -42,15 +42,15 @@ git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUST
 
 # Configure dotfiles using dotbot
 if [ -f "install.conf.yaml" ]; then
-    DOTBOT_BIN_DIR -c install.conf.yaml
+    $DOTBOT_BIN_DIR -c install.conf.yaml
 else
     echo "Could not find 'install.conf.yaml' or 'install.conf.json' for dotbot configuration."
 fi
 
+echo "Dotfiles setup completed!"
+
 # Set as default (Requires logout)
 if [ "$OS" == "Linux" ]; then
-    echo "Change default shell to zsh for Linux OS, Please logout for changes to take effect"
-    chsh -s "$(which zsh)"
+    echo "In order to change default shell to zsh for Linux OS, Please enter this command chsh -s $(which zsh)"
+    echo "After that you need to logout and login again for the changes to take effect"
 fi
-
-echo "Dotfiles setup completed!"
