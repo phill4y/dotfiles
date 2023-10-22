@@ -61,10 +61,3 @@ git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUST
 "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"/themes/powerlevel10k/gitstatus/install
 
 echo "Dotfiles setup completed!"
-
-# Set as default (Requires logout)
-if [ "$OS" == "Linux" ]; then
-    echo -e "\n\nIn order to change default shell to zsh for Linux OS, Please enter the following command"
-    echo -e "\nchsh -s $(which zsh)"
-    echo -e "\nAfter that you need to logout and login again for the changes to take effect"
-fi
