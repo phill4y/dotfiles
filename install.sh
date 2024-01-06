@@ -48,6 +48,10 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
         echo 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
         exit 1
     fi
+
+    # Remove and replace
+    rm ~/.zshrc
+    mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
 else
     echo "oh-my-zsh already installed"
 fi
