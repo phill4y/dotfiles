@@ -13,3 +13,8 @@ Host raspi
     HostName 192.168.178.21
     User ubuntu
     PreferredAuthentications publickey
+
+Host ar51
+    HostName 10.7.5.161
+    User arculee
+    PreferredAuthentications publickey
