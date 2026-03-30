@@ -8,7 +8,7 @@ Host raspi5
     User phillip
     PreferredAuthentications publickey
 
-Host maty
-    HostName 192.168.178.33
-    User maty
+Host cobber
+    HostName 192.168.178.40
+    User cobber
     PreferredAuthentications publickey
